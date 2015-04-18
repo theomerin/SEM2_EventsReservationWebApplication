@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -50,7 +51,9 @@ public class RegisterGetSeatNumber extends HttpServlet {
 		}
 		response.setContentType("text/html");  
 		PrintWriter out = response.getWriter();
+		Cookie ck=new Cookie("seatNumber", seatNumber);//creating cookie object  
+		response.addCookie(ck);//adding cookie in the response  
 		RequestDispatcher rd=request.getRequestDispatcher("/reserve-now2.html");  
-        rd.include(request, response);
+        rd.forward(request, response);
 	}
 }

@@ -52,6 +52,7 @@
 		<h2 class="banner-middletext">RESERVATION</h2>
 	</section>
 	<section class="registration">
+	<form id="seatsChooser" action="RegisterGeneratePDF" method="post">
 		<ul>
 			<li id="registration-choose" class="special-list"
 				style="height: 80%; margin-bottom: 40px; padding-bottom: 10px;">
@@ -971,6 +972,43 @@
 						style="outline: none;" title="Image Map"
 						href="http://www.image-maps.com/index.php?aff=mapped_users_49872" />
 				</map>
+				<br/><hr/><br/>
+				<table>
+					<tr>
+						<td colspan="2"><label for="firstname">FIRST NAME:</label></td>
+						<td colspan="2"><label for="lastname">LAST NAME:</label></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" name="firstname"
+							id="firstname" class="long-textbox" placeholder="First name"></td>
+						<td colspan="2"><input type="text" name="lastname"
+							id="lastname" class="long-textbox" placeholder="Last name"></td>
+					</tr>
+					<tr>
+						<td><label for="address">ADDRESS:</label></td>
+						<td><input type="text" name="address" id="inputaddress"
+							class="short-textbox" placeholder="Address"></td>
+						<td><label for="zip">ZIP CODE:</label></td>
+						<td><input type="text" name="zip" id="inputzip"
+							class="short-textbox" placeholder="1000"></td>
+					</tr>
+
+					<tr>
+						<td><label for="email">E-MAIL ADDRESS:</label></td>
+						<td colspan="3"><input type="text" name="email"
+							id="inputemail" class="long-textbox"
+							placeholder="email@example.com"></td>
+					</tr>
+					<tr>
+						<td><label for="mobilenum">MOBILE NUMBER:</label></td>
+						<td colspan="3"><input type="text" name="mobilenum"
+							id="inputcontact" class="long-textbox" placeholder="0926XXXXXXX"></td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							</td>
+					</tr>
+				</table>
 			</li>
 			<li id="ticket-details" class="special-list">
 				
@@ -999,14 +1037,15 @@
 					</tr>
 				</table>
 				
-				<form id="seatsChooser" action="RegisterGetSeatNumber" method="post">
+				
 				<input id="seatNo" type="hidden" name="seatNo" value="" />
 				<button type="reset" id="cancel-button"
 					style="margin: 0 0 0 150px;">CANCEL</button>
 				<button type="submit" id="next-button">NEXT</button>
-				</form>
+				
 			</li>
 		</ul>
+		</form>
 	</section>
 
 </body>

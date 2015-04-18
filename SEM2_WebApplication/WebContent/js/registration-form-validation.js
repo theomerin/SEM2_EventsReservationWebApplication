@@ -25,6 +25,7 @@ function formValidation()
 								{
 									if(validSubmit())
 									{
+										return true;
 									}
 								}
 							}
