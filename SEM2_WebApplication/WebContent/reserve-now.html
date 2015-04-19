@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WEB PROJECT | SEM2</title>
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Raleway:700,400'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Hind:600,300,400'
+	rel='stylesheet' type='text/css'>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+	<script>
+		function detectSeat(x) {
+			document.getElementById("seatNo").value = x;
+			var str = x.charAt(0);
+			if (str == "A" || str == "B" || str == "C" || str == "D" || str == "E") {
+				document.getElementById("seatType").innerHTML = "VIP";
+				document.getElementById("seatPrice").innerHTML = "5000";
+				document.getElementById("total").innerHTML = "5000";
+			} else if (str == "P" || str == "Q" || str == "R" || str == "S") {
+				document.getElementById("seatType").innerHTML = "General Admission";
+				document.getElementById("seatPrice").innerHTML = "500";
+				document.getElementById("total").innerHTML = "500";
+			} else {
+				document.getElementById("seatType").innerHTML = "Patron";
+				document.getElementById("seatPrice").innerHTML = "2500";
+				document.getElementById("total").innerHTML = "2500";
+			}
+			
+			return x;
+		}
+	</script>
+</head>
+
+<body>
+	<!--    <section id = "section-wrapper">-->
+	<section id="banner-about-us">
+		<header>
+			<nav>
+				<a href="index.html"><div id="logo">
+						<h2>EVENTS | TEAM</h2>
+					</div></a>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about-us.html">ABOUT US</a></li>
+					<li><a href="events.html">EVENTS</a></li>
+					<li id="selected"><a href="reserve-now.html">RESERVE NOW</a></li>
+				</ul>
+			</nav>
+		</header>
+		<h2 class="banner-middletext">RESERVATION</h2>
+	</section>
+	<section class="registration">
+		<ul>
+			<li id="registration-choose" class="special-list"
+				style="height: 80%; margin-bottom: 40px; padding-bottom: 10px;">
+				<h3 style="margin-left: 10px;">SELECT SEAT</h3> <img
+				id="Image-Maps-Com-image-maps-2015-04-18-143958"
+				src="img/reservation/seatPlan.jpg" border="0" width="398"
+				height="518" orgWidth="398" orgHeight="518"
+				usemap="#image-maps-2015-04-18-143958" alt=""
+				style="margin-left: 20px;" /> <map
+					name="image-maps-2015-04-18-143958"
+					id="ImageMapsCom-image-maps-2015-04-18-143958">
+					<area id="S1" alt="" title="S1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S1')"
+						shape="rect" coords="12,51,30,71" style="outline: none;"
+						target="_self" />
+					<area id="S2" alt="" title="S2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S2')"
+						shape="rect" coords="28,47,46,67" style="outline: none;"
+						target="_self" />
+					<area id="A1" alt="" title="A1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A1')"
+						shape="rect" coords="13,468,30,489" style="outline: none;"
+						target="_self" />
+					<area id="A2" alt="" title="A2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A2')"
+						shape="rect" coords="30,463,47,484" style="outline: none;"
+						target="_self" />
+					<area id="A5" alt="" title="A5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A5')"
+						shape="rect" coords="118,448,134,467" style="outline: none;"
+						target="_self" />
+					<area id="A6" alt="" title="A6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A6')"
+						shape="rect" coords="135,446,151,465" style="outline: none;"
+						target="_self" />
+					<area id="S3" alt="" title="S3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S3')"
+						shape="rect" coords="44,42,62,62" style="outline: none;"
+						target="_self" />
+					<area id="S4" alt="" title="S4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S4')"
+						shape="rect" coords="61,38,80,59" style="outline: none;"
+						target="_self" />
+					<area id="A7" alt="" title="A7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A7')"
+						shape="rect" coords="151,444,166,464" style="outline: none;"
+						target="_self" />
+					<area id="A8" alt="" title="A8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A8')"
+						shape="rect" coords="167,443,182,463" style="outline: none;"
+						target="_self" />
+					<area id="A9" alt="" title="A9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A9')"
+						shape="rect" coords="183,443,198,462" style="outline: none;"
+						target="_self" />
+					<area id="A10" alt="" title="A10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A10')"
+						shape="rect" coords="199,443,214,462" style="outline: none;"
+						target="_self" />
+					<area id="A11" alt="" title="A11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A11')"
+						shape="rect" coords="215,444,230,463" style="outline: none;"
+						target="_self" />
+					<area id="A12" alt="" title="A12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A12')"
+						shape="rect" coords="231,445,245,464" style="outline: none;"
+						target="_self" />
+					<area id="A13" alt="" title="A13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A13')"
+						shape="rect" coords="247,447,261,466" style="outline: none;"
+						target="_self" />
+					<area id="A14" alt="" title="A14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A14')"
+						shape="rect" coords="262,449,278,468" style="outline: none;"
+						target="_self" />
+					<area id="A17" alt="" title="A17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A17')"
+						shape="rect" coords="348,465,365,485" style="outline: none;"
+						target="_self" />
+					<area id="A18" alt="" title="A18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('A18')"
+						shape="rect" coords="364,471,381,490" style="outline: none;"
+						target="_self" />
+					<area id="R1" alt="" title="R1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R1')"
+						shape="rect" coords="13,79,31,98" style="outline: none;"
+						target="_self" />
+					<area id="Q1" alt="" title="Q1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q1')"
+						shape="rect" coords="13,104,31,126" style="outline: none;"
+						target="_self" />
+					<area id="P1" alt="" title="P1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P1')"
+						shape="rect" coords="13,131,31,152" style="outline: none;"
+						target="_self" />
+					<area id="N1" alt="" title="N1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N1')"
+						shape="rect" coords="13,156,31,177" style="outline: none;"
+						target="_self" />
+					<area id="M1" alt="" title="M1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M1')"
+						shape="rect" coords="12,183,31,201" style="outline: none;"
+						target="_self" />
+					<area id="L1" alt="" title="L1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L1')"
+						shape="rect" coords="12,209,31,228" style="outline: none;"
+						target="_self" />
+					<area id="K1" alt="" title="K1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K1')"
+						shape="rect" coords="14,234,30,254" style="outline: none;"
+						target="_self" />
+					<area id="J1" alt="" title="J1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J1')"
+						shape="rect" coords="14,259,31,280" style="outline: none;"
+						target="_self" />
+					<area id="H1" alt="" title="H1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H1')"
+						shape="rect" coords="12,286,29,306" style="outline: none;"
+						target="_self" />
+					<area id="G1" alt="" title="G1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G1')"
+						shape="rect" coords="15,312,30,332" style="outline: none;"
+						target="_self" />
+					<area id="F1" alt="" title="F1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('F1')"
+						shape="rect" coords="14,339,30,359" style="outline: none;"
+						target="_self" />
+					<area id="E1" alt="" title="E1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('E1')"
+						shape="rect" coords="14,366,30,385" style="outline: none;"
+						target="_self" />
+					<area id="D1" alt="" title="D1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('D1')"
+						shape="rect" coords="14,390,31,410" style="outline: none;"
+						target="_self" />
+					<area id="C1" alt="" title="C1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('C1')"
+						shape="rect" coords="13,415,30,437" style="outline: none;"
+						target="_self" />
+					<area id="B1" alt="" title="B1" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('B1')"
+						shape="rect" coords="13,442,30,463" style="outline: none;"
+						target="_self" />
+					<area id="B2" alt="" title="B2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('B2')"
+						shape="rect" coords="29,438,47,459" style="outline: none;"
+						target="_self" />
+					<area id="C2" alt="" title="C2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('C2')"
+						shape="rect" coords="29,410,47,433" style="outline: none;"
+						target="_self" />
+					<area id="D2" alt="" title="D2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('D2')"
+						shape="rect" coords="30,385,46,406" style="outline: none;"
+						target="_self" />
+					<area id="E2" alt="" title="E2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('E2')"
+						shape="rect" coords="30,360,46,380" style="outline: none;"
+						target="_self" />
+					<area id="F2" alt="" title="F2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('F2')"
+						shape="rect" coords="29,333,46,354" style="outline: none;"
+						target="_self" />
+					<area id="G2" alt="" title="G2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G2')"
+						shape="rect" coords="29,307,46,328" style="outline: none;"
+						target="_self" />
+					<area id="H2" alt="" title="H2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H2')"
+						shape="rect" coords="30,280,46,301" style="outline: none;"
+						target="_self" />
+					<area id="J2" alt="" title="J2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J2')"
+						shape="rect" coords="30,253,46,277" style="outline: none;"
+						target="_self" />
+					<area id="K2" alt="" title="K2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K2')"
+						shape="rect" coords="30,228,46,249" style="outline: none;"
+						target="_self" />
+					<area id="L2" alt="" title="L2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L2')"
+						shape="rect" coords="29,201,45,224" style="outline: none;"
+						target="_self" />
+					<area id="M2" alt="" title="M2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M2')"
+						shape="rect" coords="29,176,46,197" style="outline: none;"
+						target="_self" />
+					<area id="N2" alt="" title="N2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N2')"
+						shape="rect" coords="29,151,46,171" style="outline: none;"
+						target="_self" />
+					<area id="P2" alt="" title="P2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P2')"
+						shape="rect" coords="29,124,46,146" style="outline: none;"
+						target="_self" data-maphilight='P2' />
+					<area id="Q2" alt="" title="Q2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q2')"
+						shape="rect" coords="29,98,46,120" style="outline: none;"
+						target="_self" />
+					<area id="R2" alt="" title="R2" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R2')"
+						shape="rect" coords="30,71,46,94" style="outline: none;"
+						target="_self" />
+					<area id="B3" alt="" title="B3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('B3')"
+						shape="rect" coords="45,433,62,455" style="outline: none;"
+						target="_self" />
+					<area id="C3" alt="" title="C3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('C3')"
+						shape="rect" coords="45,407,62,428" style="outline: none;"
+						target="_self" />
+					<area id="D3" alt="" title="D3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('D3')"
+						shape="rect" coords="46,379,62,402" style="outline: none;"
+						target="_self" />
+					<area id="E3" alt="" title="E3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('E3')"
+						shape="rect" coords="45,355,61,376" style="outline: none;"
+						target="_self" />
+					<area id="F3" alt="" title="F3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('F3')"
+						shape="rect" coords="46,328,62,349" style="outline: none;"
+						target="_self" />
+					<area id="G3" alt="" title="G3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G3')"
+						shape="rect" coords="45,301,62,324" style="outline: none;"
+						target="_self" />
+					<area id="H3" alt="" title="H3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H3')"
+						shape="rect" coords="46,276,62,298" style="outline: none;"
+						target="_self" />
+					<area id="K3" alt="" title="K3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K3')"
+						shape="rect" coords="45,223,61,246" style="outline: none;"
+						target="_self" />
+					<area id="J3" alt="" title="J3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J3')"
+						shape="rect" coords="44,249,62,271" style="outline: none;"
+						target="_self" />
+					<area id="L3" alt="" title="L3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L3')"
+						shape="rect" coords="45,198,62,220" style="outline: none;"
+						target="_self" />
+					<area id="M3" alt="" title="M3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M3')"
+						shape="rect" coords="45,172,62,194" style="outline: none;"
+						target="_self" />
+					<area id="N3" alt="" title="N3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N3')"
+						shape="rect" coords="46,146,62,168" style="outline: none;"
+						target="_self" />
+					<area id="P3" alt="" title="P3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P3')"
+						shape="rect" coords="46,119,61,141" style="outline: none;"
+						target="_self" />
+					<area id="Q3" alt="" title="Q3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q3')"
+						shape="rect" coords="46,94,62,116" style="outline: none;"
+						target="_self" />
+					<area id="R3" alt="" title="R3" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R3')"
+						shape="rect" coords="46,67,62,89" style="outline: none;"
+						target="_self" />
+					<area id="Q4" alt="" title="Q4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q4')"
+						shape="rect" coords="61,90,78,112" style="outline: none;"
+						target="_self" />
+					<area id="R4" alt="" title="R4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R4')"
+						shape="rect" coords="61,65,77,86" style="outline: none;"
+						target="_self" />
+					<area id="P4" alt="" title="P4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P4')"
+						shape="rect" coords="61,117,78,138" style="outline: none;"
+						target="_self" />
+					<area id="N4" alt="" title="N4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N4')"
+						shape="rect" coords="61,142,78,164" style="outline: none;"
+						target="_self" />
+					<area id="M4" alt="" title="M4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M4')"
+						shape="rect" coords="61,167,77,189" style="outline: none;"
+						target="_self" />
+					<area id="L4" alt="" title="L4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L4')"
+						shape="rect" coords="61,194,78,216" style="outline: none;"
+						target="_self" />
+					<area id="H4" alt="" title="H4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H4')"
+						shape="rect" coords="61,273,78,295" style="outline: none;"
+						target="_self" />
+					<area id="K4" alt="" title="K4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K4')"
+						shape="rect" coords="60,221,77,241" style="outline: none;"
+						target="_self" />
+					<area id="J4" alt="" title="J4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J4')"
+						shape="rect" coords="61,247,78,268" style="outline: none;"
+						target="_self" />
+					<area id="G4" alt="" title="G4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G4')"
+						shape="rect" coords="61,299,77,320" style="outline: none;"
+						target="_self" />
+					<area id="F4" alt="" title="F4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('F4')"
+						shape="rect" coords="61,324,77,346" style="outline: none;"
+						target="_self" />
+					<area id="E4" alt="" title="E4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('E4')"
+						shape="rect" coords="60,352,77,372" style="outline: none;"
+						target="_self" />
+					<area id="D4" alt="" title="D4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('D4')"
+						shape="rect" coords="61,378,78,398" style="outline: none;"
+						target="_self" />
+					<area id="C4" alt="" title="C4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('C4')"
+						shape="rect" coords="61,403,78,425" style="outline: none;"
+						target="_self" />
+					<area id="B4" alt="" title="B4" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('B4')"
+						shape="rect" coords="61,429,78,450" style="outline: none;"
+						target="_self" />
+					<area id="S6" alt="" title="S6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S6')"
+						shape="rect" coords="135,28,150,48" style="outline: none;"
+						target="_self" />
+					<area id="S7" alt="" title="S7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S7')"
+						shape="rect" coords="151,27,166,47" style="outline: none;"
+						target="_self" />
+					<area id="S8" alt="" title="S8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S8')"
+						shape="rect" coords="167,26,182,46" style="outline: none;"
+						target="_self" />
+					<area id="S9" alt="" title="S9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S9')"
+						shape="rect" coords="183,26,198,46" style="outline: none;"
+						target="_self" />
+					<area id="S10" alt="" title="S10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S10')"
+						shape="rect" coords="199,26,214,46" style="outline: none;"
+						target="_self" />
+					<area id="S11" alt="" title="S11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S11')"
+						shape="rect" coords="216,26,230,46" style="outline: none;"
+						target="_self" />
+					<area id="S12" alt="" title="S12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S12')"
+						shape="rect" coords="232,28,245,47" style="outline: none;"
+						target="_self" />
+					<area id="S13" alt="" title="S13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('S13')"
+						shape="rect" coords="248,29,263,50" style="outline: none;"
+						target="_self" />
+					<area id="R5" alt="" title="R5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R5')"
+						shape="rect" coords="119,56,134,76" style="outline: none;"
+						target="_self" />
+					<area id="R6" alt="" title="R6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R6')"
+						shape="rect" coords="136,55,150,74" style="outline: none;"
+						target="_self" />
+					<area id="R7" alt="" title="R7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R7')"
+						shape="rect" coords="152,54,165,73" style="outline: none;"
+						target="_self" />
+					<area id="R8" alt="" title="R8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R8')"
+						shape="rect" coords="167,54,182,72" style="outline: none;"
+						target="_self" />
+					<area id="R9" alt="" title="R9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R9')"
+						shape="rect" coords="183,53,198,71" style="outline: none;"
+						target="_self" />
+					<area id="R10" alt="" title="R10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R10'')"
+						shape="rect" coords="199,53,214,71" style="outline: none;"
+						target="_self" />
+					<area id="R11" alt="" title="R11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R11')"
+						shape="rect" coords="216,53,229,72" style="outline: none;"
+						target="_self" />
+					<area id="R12" alt="" title="R12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R12')"
+						shape="rect" coords="231,55,245,73" style="outline: none;"
+						target="_self" />
+					<area id="R13" alt="" title="R13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R13')"
+						shape="rect" coords="248,56,262,75" style="outline: none;"
+						target="_self" />
+					<area id="R14" alt="" title="R14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R14')"
+						shape="rect" coords="263,58,278,77" style="outline: none;"
+						target="_self" />
+					<area id="R15" alt="" title="R15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R15')"
+						shape="rect" coords="318,68,333,87" style="outline: none;"
+						target="_self" />
+					<area id="R16" alt="" title="R16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R16')"
+						shape="rect" coords="334,71,349,90" style="outline: none;"
+						target="_self" />
+					<area id="R17" alt="" title="R17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R17')"
+						shape="rect" coords="350,75,364,94" style="outline: none;"
+						target="_self" />
+					<area id="R18" alt="" title="R18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('R18')"
+						shape="rect" coords="364,80,380,100" style="outline: none;"
+						target="_self" />
+					<area id="Q5" alt="" title="Q5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q5')"
+						shape="rect" coords="119,83,134,102" style="outline: none;"
+						target="_self" />
+					<area id="Q6" alt="" title="Q6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q6')"
+						shape="rect" coords="135,82,150,100" style="outline: none;"
+						target="_self" />
+					<area id="Q8" alt="" title="Q8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q8')"
+						shape="rect" coords="167,80,182,98" style="outline: none;"
+						target="_self" />
+					<area id="Q7" alt="" title="Q7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q7')"
+						shape="rect" coords="151,81,165,99" style="outline: none;"
+						target="_self" />
+					<area id="Q9" alt="" title="Q9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q9')"
+						shape="rect" coords="183,79,197,97" style="outline: none;"
+						target="_self" />
+					<area id="Q10" alt="" title="Q10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q10')"
+						shape="rect" coords="199,79,213,97" style="outline: none;"
+						target="_self" />
+					<area id="Q11" alt="" title="Q11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q11')"
+						shape="rect" coords="216,80,229,98" style="outline: none;"
+						target="_self" />
+					<area id="Q12" alt="" title="Q12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q12')"
+						shape="rect" coords="231,81,245,99" style="outline: none;"
+						target="_self" />
+					<area id="Q13" alt="" title="Q13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q13')"
+						shape="rect" coords="248,82,262,101" style="outline: none;"
+						target="_self" />
+					<area id="Q14" alt="" title="Q14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q14')"
+						shape="rect" coords="263,83,279,103" style="outline: none;"
+						target="_self" />
+					<area id="Q15" alt="" title="Q15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q15')"
+						shape="rect" coords="318,93,333,113" style="outline: none;"
+						target="_self" />
+					<area id="Q16" alt="" title="Q16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q16')"
+						shape="rect" coords="333,96,348,117" style="outline: none;"
+						target="_self" />
+					<area id="Q17" alt="" title="Q17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q17')"
+						shape="rect" coords="349,101,364,120" style="outline: none;"
+						target="_self" />
+					<area id="Q18" alt="" title="Q18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('Q18')"
+						shape="rect" coords="365,105,381,125" style="outline: none;"
+						target="_self" />
+					<area id="P5" alt="" title="P5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P5')"
+						shape="rect" coords="117,109,134,128" style="outline: none;"
+						target="_self" />
+					<area id="P6" alt="" title="P6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P6')"
+						shape="rect" coords="135,108,150,127" style="outline: none;"
+						target="_self" />
+					<area id="P7" alt="" title="P7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P7')"
+						shape="rect" coords="151,105,166,125" style="outline: none;"
+						target="_self" />
+					<area id="P8" alt="" title="P8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P8')"
+						shape="rect" coords="167,105,182,124" style="outline: none;"
+						target="_self" />
+					<area id="P9" alt="" title="P9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P9')"
+						shape="rect" coords="183,105,198,124" style="outline: none;"
+						target="_self" />
+					<area id="P10" alt="" title="P10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P10')"
+						shape="rect" coords="199,105,214,124" style="outline: none;"
+						target="_self" />
+					<area id="P11" alt="" title="P11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P11')"
+						shape="rect" coords="216,106,230,125" style="outline: none;"
+						target="_self" />
+					<area id="P12" alt="" title="P12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P12')"
+						shape="rect" coords="231,107,245,126" style="outline: none;"
+						target="_self" />
+					<area id="P13" alt="" title="P13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P13')"
+						shape="rect" coords="248,108,261,127" style="outline: none;"
+						target="_self" />
+					<area id="P14" alt="" title="P14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P14')"
+						shape="rect" coords="264,109,279,128" style="outline: none;"
+						target="_self" />
+					<area id="P15" alt="" title="P15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P15')"
+						shape="rect" coords="317,120,333,139" style="outline: none;"
+						target="_self" />
+					<area id="P16" alt="" title="P16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P16')"
+						shape="rect" coords="333,123,349,142" style="outline: none;"
+						target="_self" />
+					<area id="P17" alt="" title="P17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P17')"
+						shape="rect" coords="349,127,365,147" style="outline: none;"
+						target="_self" />
+					<area id="P18" alt="" title="P18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('P18')"
+						shape="rect" coords="365,132,381,151" style="outline: none;"
+						target="_self" />
+					<area id="N5" alt="" title="N5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N5')"
+						shape="rect" coords="119,136,135,154" style="outline: none;"
+						target="_self" />
+					<area id="N6" alt="" title="N6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N6')"
+						shape="rect" coords="135,134,150,153" style="outline: none;"
+						target="_self" />
+					<area id="N7" alt="" title="N7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N7')"
+						shape="rect" coords="151,132,166,151" style="outline: none;"
+						target="_self" />
+					<area id="N8" alt="" title="N8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N8')"
+						shape="rect" coords="167,131,182,150" style="outline: none;"
+						target="_self" />
+					<area id="N11" alt="" title="N11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N11')"
+						shape="rect" coords="215,131,230,151" style="outline: none;"
+						target="_self" />
+					<area id="N9" alt="" title="N9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N9')"
+						shape="rect" coords="183,131,198,150" style="outline: none;"
+						target="_self" />
+					<area id="N10" alt="" title="N10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N10')"
+						shape="rect" coords="199,131,214,150" style="outline: none;"
+						target="_self" />
+					<area id="N12" alt="" title="N12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N12')"
+						shape="rect" coords="231,133,246,152" style="outline: none;"
+						target="_self" />
+					<area id="N13" alt="" title="N13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N13')"
+						shape="rect" coords="247,134,262,153" style="outline: none;"
+						target="_self" />
+					<area id="N14" alt="" title="N14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N14')"
+						shape="rect" coords="263,136,279,155" style="outline: none;"
+						target="_self" />
+					<area id="N15" alt="" title="N15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N15')"
+						shape="rect" coords="318,146,333,165" style="outline: none;"
+						target="_self" />
+					<area id="N16" alt="" title="N16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N16')"
+						shape="rect" coords="333,149,349,168" style="outline: none;"
+						target="_self" />
+					<area id="N17" alt="" title="N17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N17')"
+						shape="rect" coords="349,153,364,172" style="outline: none;"
+						target="_self" />
+					<area id="N18" alt="" title="N18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('N18')"
+						shape="rect" coords="365,158,381,177" style="outline: none;"
+						target="_self" />
+					<area id="M5" alt="" title="M5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M5')"
+						shape="rect" coords="119,161,134,180" style="outline: none;"
+						target="_self" />
+					<area id="M6" alt="" title="M6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M6')"
+						shape="rect" coords="136,159,150,178" style="outline: none;"
+						target="_self" />
+					<area id="M8" alt="" title="M8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M8')"
+						shape="rect" coords="168,157,182,176" style="outline: none;"
+						target="_self" />
+					<area id="M9" alt="" title="M9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M9')"
+						shape="rect" coords="183,157,198,176" style="outline: none;"
+						target="_self" />
+					<area id="M10" alt="" title="M10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M10')"
+						shape="rect" coords="200,157,214,176" style="outline: none;"
+						target="_self" />
+					<area id="M7" alt="" title="M7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M7')"
+						shape="rect" coords="152,158,166,177" style="outline: none;"
+						target="_self" />
+					<area id="M11" alt="" title="M11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M11')"
+						shape="rect" coords="216,158,230,176" style="outline: none;"
+						target="_self" />
+					<area id="M12" alt="" title="M12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M12')"
+						shape="rect" coords="231,159,245,177" style="outline: none;"
+						target="_self" />
+					<area id="M13" alt="" title="M13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M13')"
+						shape="rect" coords="247,160,262,179" style="outline: none;"
+						target="_self" />
+					<area id="M14" alt="" title="M14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M14')"
+						shape="rect" coords="263,162,279,181" style="outline: none;"
+						target="_self" />
+					<area id="M15" alt="" title="M15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M15')"
+						shape="rect" coords="318,171,334,190" style="outline: none;"
+						target="_self" />
+					<area id="M16" alt="" title="M16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M16')"
+						shape="rect" coords="334,175,349,195" style="outline: none;"
+						target="_self" />
+					<area id="M18" alt="" title="M18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M18')"
+						shape="rect" coords="365,184,380,203" style="outline: none;"
+						target="_self" />
+					<area id="M17" alt="" title="M17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('M17')"
+						shape="rect" coords="350,180,365,199" style="outline: none;"
+						target="_self" />
+					<area id="L5" alt="" title="L5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L5')"
+						shape="rect" coords="119,188,134,207" style="outline: none;"
+						target="_self" />
+					<area id="L6" alt="" title="L6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L6')"
+						shape="rect" coords="135,186,150,205" style="outline: none;"
+						target="_self" />
+					<area id="L7" alt="" title="L7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L7')"
+						shape="rect" coords="151,184,166,203" style="outline: none;"
+						target="_self" />
+					<area id="L8" alt="" title="L8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L8')"
+						shape="rect" coords="167,183,182,203" style="outline: none;"
+						target="_self" />
+					<area id="L9" alt="" title="L9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L9')"
+						shape="rect" coords="183,183,198,202" style="outline: none;"
+						target="_self" />
+					<area id="L10" alt="" title="L10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L10')"
+						shape="rect" coords="200,183,213,202" style="outline: none;"
+						target="_self" />
+					<area id="L11" alt="" title="L11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L11')"
+						shape="rect" coords="216,183,229,202" style="outline: none;"
+						target="_self" />
+					<area id="L12" alt="" title="L12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L12')"
+						shape="rect" coords="231,184,245,203" style="outline: none;"
+						target="_self" />
+					<area id="L13" alt="" title="L13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L13')"
+						shape="rect" coords="247,186,261,205" style="outline: none;"
+						target="_self" />
+					<area id="L14" alt="" title="L14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L14')"
+						shape="rect" coords="263,188,278,207" style="outline: none;"
+						target="_self" />
+					<area id="L15" alt="" title="L15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L15')"
+						shape="rect" coords="317,197,333,217" style="outline: none;"
+						target="_self" />
+					<area id="L16" alt="" title="L16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L16')"
+						shape="rect" coords="334,202,350,221" style="outline: none;"
+						target="_self" />
+					<area id="L17" alt="" title="L17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L17')"
+						shape="rect" coords="349,206,364,225" style="outline: none;"
+						target="_self" />
+					<area id="L18" alt="" title="L18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('L18')"
+						shape="rect" coords="365,210,380,230" style="outline: none;"
+						target="_self" />
+					<area id="K5" alt="" title="K5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K5')"
+						shape="rect" coords="120,213,134,232" style="outline: none;"
+						target="_self" />
+					<area id="K6" alt="" title="K6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K6')"
+						shape="rect" coords="136,212,150,231" style="outline: none;"
+						target="_self" />
+					<area id="K7" alt="" title="K7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K7')"
+						shape="rect" coords="152,210,166,230" style="outline: none;"
+						target="_self" />
+					<area id="K8" alt="" title="K8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K8')"
+						shape="rect" coords="168,209,182,229" style="outline: none;"
+						target="_self" />
+					<area id="K9" alt="" title="K9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K9')"
+						shape="rect" coords="183,209,198,229" style="outline: none;"
+						target="_self" />
+					<area id="K10" alt="" title="K10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K10')"
+						shape="rect" coords="200,209,214,229" style="outline: none;"
+						target="_self" />
+					<area id="K11" alt="" title="K11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K11')"
+						shape="rect" coords="215,210,229,229" style="outline: none;"
+						target="_self" />
+					<area id="K13" alt="" title="K13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K13')"
+						shape="rect" coords="247,212,261,231" style="outline: none;"
+						target="_self" />
+					<area id="K12" alt="" title="K12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K12')"
+						shape="rect" coords="232,211,245,230" style="outline: none;"
+						target="_self" />
+					<area id="K14" alt="" title="K14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K14')"
+						shape="rect" coords="263,214,278,233" style="outline: none;"
+						target="_self" />
+					<area id="K15" alt="" title="K15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K15')"
+						shape="rect" coords="318,223,333,242" style="outline: none;"
+						target="_self" />
+					<area id="K16" alt="" title="K16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K16')"
+						shape="rect" coords="333,227,349,246" style="outline: none;"
+						target="_self" />
+					<area id="K18" alt="" title="K18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K18')"
+						shape="rect" coords="365,237,380,256" style="outline: none;"
+						target="_self" />
+					<area id="K17" alt="" title="K17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('K17')"
+						shape="rect" coords="350,231,365,250" style="outline: none;"
+						target="_self" />
+					<area id="J5" alt="" title="J5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J5')"
+						shape="rect" coords="118,239,134,259" style="outline: none;"
+						target="_self" />
+					<area id="J6" alt="" title="J6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J6')"
+						shape="rect" coords="136,237,150,257" style="outline: none;"
+						target="_self" />
+					<area id="J7" alt="" title="J7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J7')"
+						shape="rect" coords="152,235,166,255" style="outline: none;"
+						target="_self" />
+					<area id="J8" alt="" title="J8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J8')"
+						shape="rect" coords="168,236,182,255" style="outline: none;"
+						target="_self" />
+					<area id="J9" alt="" title="J9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J9')"
+						shape="rect" coords="183,235,198,255" style="outline: none;"
+						target="_self" />
+					<area id="J10" alt="" title="J10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J10')"
+						shape="rect" coords="199,235,214,255" style="outline: none;"
+						target="_self" />
+					<area id="J11" alt="" title="J11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J11')"
+						shape="rect" coords="215,235,230,255" style="outline: none;"
+						target="_self" />
+					<area id="J12" alt="" title="J12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J12')"
+						shape="rect" coords="231,237,246,256" style="outline: none;"
+						target="_self" />
+					<area id="J13" alt="" title="J13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J13')"
+						shape="rect" coords="247,238,262,257" style="outline: none;"
+						target="_self" />
+					<area id="J14" alt="" title="J14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J14')"
+						shape="rect" coords="264,240,278,259" style="outline: none;"
+						target="_self" />
+					<area id="J15" alt="" title="J15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J15')"
+						shape="rect" coords="319,248,333,269" style="outline: none;"
+						target="_self" />
+					<area id="J16" alt="" title="J16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J16')"
+						shape="rect" coords="334,253,349,273" style="outline: none;"
+						target="_self" />
+					<area id="J18" alt="" title="J18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J18')"
+						shape="rect" coords="366,262,381,282" style="outline: none;"
+						target="_self" />
+					<area id="J17" alt="" title="J17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('J17')"
+						shape="rect" coords="350,257,365,277" style="outline: none;"
+						target="_self" />
+					<area id="H5" alt="" title="H5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H5')"
+						shape="rect" coords="119,266,134,285" style="outline: none;"
+						target="_self" />
+					<area id="H6" alt="" title="H6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H6')"
+						shape="rect" coords="136,264,150,283" style="outline: none;"
+						target="_self" />
+					<area id="H7" alt="" title="H7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H7')"
+						shape="rect" coords="152,262,166,281" style="outline: none;"
+						target="_self" />
+					<area id="H8" alt="" title="H8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H8')"
+						shape="rect" coords="168,262,182,280" style="outline: none;"
+						target="_self" />
+					<area id="H9" alt="" title="H9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H9')"
+						shape="rect" coords="184,262,198,280" style="outline: none;"
+						target="_self" />
+					<area id="H10" alt="" title="H10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H10')"
+						shape="rect" coords="200,262,214,280" style="outline: none;"
+						target="_self" />
+					<area id="H11" alt="" title="H11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H11')"
+						shape="rect" coords="216,262,230,281" style="outline: none;"
+						target="_self" />
+					<area id="H12" alt="" title="H12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H12')"
+						shape="rect" coords="232,263,246,282" style="outline: none;"
+						target="_self" />
+					<area id="H13" alt="" title="H13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H13')"
+						shape="rect" coords="247,264,262,283" style="outline: none;"
+						target="_self" />
+					<area id="H14" alt="" title="H14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H14')"
+						shape="rect" coords="263,266,277,285" style="outline: none;"
+						target="_self" />
+					<area id="H15" alt="" title="H15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H15')"
+						shape="rect" coords="319,277,333,295" style="outline: none;"
+						target="_self" />
+					<area id="H16" alt="" title="H16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H16')"
+						shape="rect" coords="335,280,349,299" style="outline: none;"
+						target="_self" />
+					<area id="H17" alt="" title="H17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H17')"
+						shape="rect" coords="350,283,364,302" style="outline: none;"
+						target="_self" />
+					<area id="H18" alt="" title="H18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('H18')"
+						shape="rect" coords="365,289,380,308" style="outline: none;"
+						target="_self" />
+					<area id="G5" alt="" title="G5" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G5')"
+						shape="rect" coords="120,293,134,310" style="outline: none;"
+						target="_self" />
+					<area id="G6" alt="" title="G6" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G6')"
+						shape="rect" coords="136,290,150,309" style="outline: none;"
+						target="_self" />
+					<area id="G7" alt="" title="G7" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G7')"
+						shape="rect" coords="152,289,166,308" style="outline: none;"
+						target="_self" />
+					<area id="G8" alt="" title="G8" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G8')"
+						shape="rect" coords="168,288,182,307" style="outline: none;"
+						target="_self" />
+					<area id="G9" alt="" title="G9" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G9')"
+						shape="rect" coords="183,288,198,307" style="outline: none;"
+						target="_self" />
+					<area id="G10" alt="" title="G10" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G10')"
+						shape="rect" coords="199,287,213,307" style="outline: none;"
+						target="_self" />
+					<area id="G11" alt="" title="G11" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G11')"
+						shape="rect" coords="215,287,230,307" style="outline: none;"
+						target="_self" />
+					<area id="G12" alt="" title="G12" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G12')"
+						shape="rect" coords="232,289,246,308" style="outline: none;"
+						target="_self" />
+					<area id="G13" alt="" title="G13" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G13')"
+						shape="rect" coords="248,290,261,309" style="outline: none;"
+						target="_self" />
+					<area id="G14" alt="" title="G14" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G14')"
+						shape="rect" coords="265,293,279,311" style="outline: none;"
+						target="_self" />
+					<area id="G15" alt="" title="G15" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G15')"
+						shape="rect" coords="318,302,332,320" style="outline: none;"
+						target="_self" />
+					<area id="G16" alt="" title="G16" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G16')"
+						shape="rect" coords="335,306,349,325" style="outline: none;"
+						target="_self" />
+					<area id="G17" alt="" title="G17" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G17')"
+						shape="rect" coords="350,311,365,328" style="outline: none;"
+						target="_self" />
+					<area id="G18" alt="" title="G18" href="#"
+						onclick="getElementById('seatNumberOut').innerHTML=detectSeat('G18')"
+						shape="rect" coords="366,316,380,334" style="outline: none;"
+						target="_self" />
+					<area shape="rect" coords="396,516,398,518" alt="Image Map"
+						style="outline: none;" title="Image Map"
+						href="http://www.image-maps.com/index.php?aff=mapped_users_49872" />
+				</map>
+			</li>
+			<li id="ticket-details" class="special-list">
+				
+				<table id="ticket-division-1" style="width: 100%">
+					<tr>
+						<td><h3>TICKET DETAILS</h3></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><h3>Seat Number:</h3></td>
+						<td><p id="seatNumberOut"></p></td>
+					</tr>
+					<tr>
+						<td><h3>Seat Type:</h3></td>
+						<td><p id="seatType"></p></td>
+					</tr>
+					<tr>
+						<td><h3>Price:</h3></td>
+						<td><p id="seatPrice"></p></td>
+					</tr>
+				</table>
+				<table id="ticket-division-2" style="width: 100%">
+					<tr>
+						<td><h3>TOTAL</h3></td>
+						<td><h3 id="total"></h3></td>
+					</tr>
+				</table>
+				
+				<form id="seatsChooser" action="RegisterGetSeatNumber" method="post">
+				<input id="seatNo" type="hidden" name="seatNo" value="" />
+				<button type="reset" id="cancel-button"
+					style="margin: 0 0 0 150px;">CANCEL</button>
+				<button type="submit" id="next-button">NEXT</button>
+				</form>
+			</li>
+		</ul>
+	</section>
+
+</body>
+</html>
